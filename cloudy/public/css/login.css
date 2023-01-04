@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2em;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'Alata', sans-serif;
+}
+
+a{
+    font-size: 1em;
+    font-family: 'Alata', sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    border-radius: 1em;
+    width: 70vw;
+    height: 70vh;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.login-left{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0em 0em 5em;
+}
+
+.login-left-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.login-left form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.login-left label{
+    margin-bottom: 0.4em;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+}
+
+.login-left input[type=text]{
+    margin-bottom: 5%;
+    padding: 0.8em;
+    border: 2px rgb(173, 173, 173) solid;
+    border-radius: 0.4em;
+    background-color: transparent;
+    font-family: 'Alata', sans-serif;
+    font-weight: bold;
+}
+
+
+.login-left input[type=password]{
+    padding: 0.8em;
+    border: 2px rgb(173, 173, 173) solid;
+    border-radius: 0.4em;
+    background-color: transparent;
+    border: 2px rgb(173, 173, 173) solid;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+.login-left input[type=submit]{
+    margin-top: 10%;
+    font-size: 1.4em;
+    padding: 0.4em;
+    border: 2px solid #000;
+    font-family: 'Inter', sans-serif;
+    border-radius: 0.2em;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.login-left input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.login-left .account-yet{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.account-yet p{
+    font-weight: bold;
+}
+
+.account-yet a{
+    color: #679ace;
+    margin-left: 0.2em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.account-yet a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+.login-right{
+    width: 40vw;
+    background-color: #679ace;
+    border-radius: 0em 1em 1em 0em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.login-right-image{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.login-right img{
+    width: 100%;
+}
+
+@media (max-width: 600px){
+    .login-right{
+        display: none;
+    }
+
+    .container{
+        background-color: #fff;
+    }
+
+    .login{
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .login-left{
+        width: 100%;
+        padding: 4em;
+    }
+
+    .login-left form{
+        width: 100%;
+    }
+
+    .account-yet p{
+        margin-top: 60%;
+    }
+}
+
+
